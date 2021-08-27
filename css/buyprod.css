@@ -169,7 +169,7 @@ div {
   width: 6px;
   height: 6px;
   margin-left: 4px;
-  border: solid #ff3e6c;
+  border: solid #FFAB00;
   border-width: 2px 2px 0 0;
 
   transform: rotate(45deg);
@@ -198,7 +198,7 @@ div {
 }
 .cartbtn {
   color: white;
-  background-color: #ff3e6c;
+  background-color: #FFAB00;
   width: 40%;
   height: 40px;
   border-radius: 5px;
@@ -330,8 +330,8 @@ div {
   /* border: dotted pink; */
 }
 .clicked {
-  border: 1px solid #ff3e6c;
-  color: #ff3e6c;
+  border: 1px solid #FFAB00;
+  color: #FFAB00;
 }
 .van {
   width: 6%;
