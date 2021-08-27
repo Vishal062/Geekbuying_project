@@ -1,40 +1,29 @@
 products = [
-    {
-        brand_name: "Moda Rapido",
-        img: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2378362/2018/6/9/270e0a7e-365b-4640-9433-b269c60bf3061528527188563-Moda-Rapido-Men-Maroon-Printed-Round-Neck-T-shirt-3811528527-1.jpg",
-        T_shirt_name: "Printed Round Neck T-shirt",
-        price: 421,
-        discount: 35,
-        oldprice: 649,
-    },
-    {
-        brand_name: "HRX",
-        img: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2314372/2018/6/19/29e8ddfd-6f5f-43fd-8b71-dfa8ac6cef681529385860869-HRX-by-Hrithik-Roshan-Men-Charcoal-Grey-Slim-Advanced-Rapid--1.jpg",
-        T_shirt_name: "Ultralyte Men Running T-shirt",
-        price: 800,
-        discount: 20,
-        oldprice: 1000,
+  {
+    brand_name: "Realme",
+    img: "https://www.gizmochina.com/wp-content/uploads/2020/09/Realme-Narzo-20-Pro.jpg",
+    p_name: "Realme narzo 30a",
+    price: 9100,
+    discount: 35,
+    oldprice: 14000,
+  },
+  {
+    brand_name: "Boat",
+    img: "https://m.media-amazon.com/images/I/61ihz46SLOL._SL1500_.jpg",
+    p_name: "Boat box a1",
+    price: 800,
+    discount: 20,
+    oldprice: 1000,
+  },
 
-    },
-
-    {
-        brand_name: "Moda Rapido",
-        img: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2378414/2018/2/8/11518071262125-Moda-Rapido-Men-Navy-Blue-Striped-Round-Neck-T-shirt-3641518071261992-1.jpg",
-        T_shirt_name: "Printed Round neck T-shirt",
-        price: 421,
-        discount: 35,
-        oldprice: 649,
-
-    },
-    {
-        brand_name: "H&M",
-        img: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/2/25/dcd80c17-5db3-4176-a0f3-62b74ce386df1614246409273-1.jpg",
-        T_shirt_name: "Round neck T-shirt Regular fit",
-        price: 350,
-        discount: 50,
-        oldprice: 700,
-
-    },
+  {
+    brand_name: "Hp laptop",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZeiweBEGQXF33uHkyzk5Pxo4RasTTK_CAdZCvE3RdQUYsDY-xk0CiQBbgd2Kpi0Mlc6E&usqp=CAU",
+    p_name: "New generation laptop",
+    price: 22750,
+    discount: 35,
+    oldprice: 35000,
+  },
 ];
 
 if (JSON.parse(localStorage.getItem("products")) == null) {
@@ -60,14 +49,14 @@ function appendProduct(el) {
     localStorage.setItem("clickedProduct", JSON.stringify(el));
   });
 
-  div.innerHTML = `<a class="each-product" href="moda.html"
+  div.innerHTML = `<a class="each-product" href="buyproduct.html"
               ><div>
                 <img
                   src= ${el.img}
                   alt=""
                 />
                 <div class="brand">${el.brand_name}</div>
-                <div class="name">${el.T_shirt_name}</div>
+                <div class="name">${el.p_name}</div>
                 <div class="price">
                  Rs. ${Math.ceil(
                    (el.oldprice * (100 - el.discount)) / 100
