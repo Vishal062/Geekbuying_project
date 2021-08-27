@@ -35,6 +35,6 @@ function successfulPayment() {
     }
   }
   setTimeout(function () {
-    window.location.href = "bag.html";
+    window.location.href = "successfulPayment.html";
   }, 3000);
 }
